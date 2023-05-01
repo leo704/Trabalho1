@@ -5,22 +5,24 @@
 
 #menuHorizontal {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   z-index: 1;
+  align-items: center;
+
 }
 #menuHorizontal ul {
   list-style: none;
-  text-align: center;
   border-radius: 0px 0px 10px 10px;
-  width: 90%;
+  width: 90vw;
   background-color: #542c2bdf;
+  text-align: center;
 }
 #menuHorizontal ul li {
   display: inline-block;
+
 }
 #menuHorizontal ul li a {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -139,6 +141,7 @@ section {
   position: absolute;
   height: inherit;
   z-index: 0;
+  width:100%;
 }
 
 #final{
