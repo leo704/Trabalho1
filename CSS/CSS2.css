@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#menuHorizontal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: absolute;
+  width: 100vw;
+  z-index: 1;
+}
+#menuHorizontal ul {
+  list-style: none;
+  text-align: center;
+  border-radius: 0px 0px 10px 10px;
+  width: 90%;
+  background-color: #542c2bdf;
+}
+#menuHorizontal ul li {
+  display: inline-block;
+}
+#menuHorizontal ul li a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  font-size: larger;
+  padding: 15px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.5s;
+  border-radius: 8px;
+}
+#menuHorizontal ul li a:hover {
+  background-color: #261313;
+  opacity: 0.8;
+  border-radius: 8px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  justify-content: space-evenly;
+}
+#primeira {
+  background-color: aliceblue;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-size: cover;
+  justify-content: left;
+}
+#primeiraContent {
+  display: flex;
+  z-index: 1;
+}
+#botaoAgendar {
+  background-color: #542c2bdf;
+  color: aliceblue;
+  border: 1px solid #261313;
+  padding: 1vh 2vw;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-top: 50px;
+}
+
+#nome {
+  padding-left: 5vw;
+  display: flex;
+  flex-direction: column;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  align-items: center;
+  text-align: center;
+}
+
+#nomeRose {
+  font-size: 3rem;
+  margin-bottom: -10px;
+}
+
+#agende {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+#sobreNos {
+  background-color: #542c2b;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: justify;
+  align-items: center;
+}
+#sobreNosContent,
+#fotosSobreNos {
+  border-radius: 15px;
+  margin: 10px;
+  padding: 15px;
+  background-color: aliceblue;
+  color: #542c2b;
+  z-index: 1;
+  width: 70vw;
+}
+
+#fotosSobreNos{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
+#fotosSobreNos img {
+  max-width: 200px;
+  max-height: 150px;
+  width: auto;
+  height: auto;
+
+}
+
+#primeira {
+  width: 100%;
+  height: 422px;
+  background-image: url(/assets/img/fotoCarrossel.jpg);
+  background-repeat: repeat-x;
+  animation: slide 60s linear infinite;
+}
+#sombraLateral {
+  position: absolute;
+  height: inherit;
+  z-index: 0;
+}
+
+#final{
+  height: 20vh;
+}
+
+.slider {
+  width: 100%;
+  height: 200px; /* Ajuste a altura conforme necessário */
+  background-image: url(caminho/para/imagem.jpg);
+  background-repeat: repeat-x;
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@media (max-width: 750px) {
+  #sobreNos {
+    height: 150vh;
+  }
+  #nome h1 {
+    line-height: 0.8;
+  }
+  #nome h2 {
+    line-height: 2;
+  }
+  #menuHorizontal ul li a {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 900px) {
+  #primeira {
+    animation: slide 60s linear infinite;
+  }
+}
