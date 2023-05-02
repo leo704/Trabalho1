@@ -24,7 +24,12 @@ section {
   flex-direction: column;
   border-radius: 40px 40px 0px 0px;
 }
-
+#formularioInicio h1{
+  text-decoration: none;
+  color: #261313;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 #formularioFormulario {
   background-color: #542c2b;
   height: fit-content;
@@ -39,15 +44,6 @@ section {
   margin-bottom: 1vw;
   border-radius: 0px 0px 40px 40px;
 }
-/*
-#formulario {
-  background-color: antiquewhite;
-  height: fit-content;
-  padding: 15px;
-  width: 96%;
-  display: flex;
-  justify-content: center;
-}*/
 
 fieldset {
   margin: 7vh;
@@ -68,3 +64,10 @@ fieldset div {
   align-items: center;
   margin:1vh;
 }
+
+.formataCol{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
