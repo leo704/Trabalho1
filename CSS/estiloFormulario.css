@@ -1,0 +1,70 @@
+#botaoIrInicio {
+  background-color: #542c2bdf;
+  color: aliceblue;
+  border: 1px solid #261313;
+  padding: 1vh 1vw;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+}
+
+#formularioInicio {
+  height: fit-content;
+  width: 96%;
+  margin-left: 2%;
+  background-color: antiquewhite;
+  margin-top: 1vw;
+  flex-direction: column;
+  border-radius: 40px 40px 0px 0px;
+}
+
+#formularioFormulario {
+  background-color: #542c2b;
+  height: fit-content;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#formularioFim {
+  height: fit-content;
+  width: 96%;
+  margin-left: 2%;
+  background-color: antiquewhite;
+  margin-bottom: 1vw;
+  border-radius: 0px 0px 40px 40px;
+}
+/*
+#formulario {
+  background-color: antiquewhite;
+  height: fit-content;
+  padding: 15px;
+  width: 96%;
+  display: flex;
+  justify-content: center;
+}*/
+
+fieldset {
+  margin: 7vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  background-color: white;
+}
+fieldset div {
+  margin: 5px;
+  width: fit-content;
+  padding: 3px;
+}
+#txtInicio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:1vh;
+}
