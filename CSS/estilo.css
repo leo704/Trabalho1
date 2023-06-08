@@ -82,9 +82,10 @@ section {
   text-align: center;
 }
 
+
 #nomeRose {
   font-size: 3rem;
-  margin-bottom: -10px;
+  line-height: 1rem;
 }
 
 #agende {
@@ -186,7 +187,7 @@ tr:hover {
 .slider {
   width: 100%;
   height: 200px; /* Ajuste a altura conforme necessário */
-  background-image: url(caminho/para/imagem.jpg);
+  /*background-image: url(caminho/para/imagem.jpg);*/
   background-repeat: repeat-x;
   animation: slide 10s linear infinite;
 }
